@@ -1,5 +1,10 @@
+// Import necessary modules and classes
+const Manager = require("../lib/Manager");
+const Engineer = require("../lib/Engineer");
+const Intern = require("../lib/Intern");
+
 // creates the team
-const generateTeam = team => {
+function generateTeam(team) {
 
     // creates the manager html
     const generateManager = manager => {
@@ -63,6 +68,7 @@ const generateTeam = team => {
     html.push(team
         .filter(employee => employee.getRole() === "Manager")
         .map(manager => generateManager(manager))
+        .join("")
     );
     html.push(team
         .filter(employee => employee.getRole() === "Engineer")
