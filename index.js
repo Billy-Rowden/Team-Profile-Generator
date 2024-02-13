@@ -107,5 +107,10 @@ function promptIntern() {
 }
 
 function promptTeamMember() {
-
+  inquirer.prompt({
+    type: 'list',
+    name: 'role',
+    message: 'Would you like to add another team member, or finish building the team?',
+    choices: ['Add an Engineer', 'Add an Intern', 'Finish building the team'],
+  });
 }
