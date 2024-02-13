@@ -13,6 +13,7 @@ const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 const teamMembers = [];
 
+// array of objects for manager questions
 const managerQuestions = [
   {
     type: 'input',
@@ -36,6 +37,7 @@ const managerQuestions = [
   },
 ];
 
+// array of objects for Engineer questions
 const engineerQuestions = [
   {
     type: 'input',
@@ -59,6 +61,7 @@ const engineerQuestions = [
   },
 ];
 
+// array of objects for Intern questions
 const internQuestions = [
   {
     type: 'input',

@@ -1,7 +1,7 @@
 // creates the team
 function generateTeam(team) {
 
-    // creates the manager html
+    // creates the manager card in html
     const generateManager = manager => {
         return `
         <div class="card employee-card">
@@ -20,7 +20,7 @@ function generateTeam(team) {
         `;
     };
 
-    // creates the html for engineers
+    // creates the card in html for engineers
     const generateEngineer = engineer => {
         return `
         <div class="card employee-card">
@@ -39,7 +39,7 @@ function generateTeam(team) {
         `;
     };
 
-    // creates the html for interns
+    // creates the card in html for interns
     const generateIntern = intern => {
         return `
         <div class="card employee-card">
@@ -58,11 +58,11 @@ function generateTeam(team) {
         `;
     };
 
-    const html = [];
+    const html = []; // array for the html content
 
     html.push(team
-        .filter(employee => employee.getRole() === "Manager")
-        .map(manager => generateManager(manager))
+        .filter(employee => employee.getRole() === "Manager") // filters the team array to only include managers information, same for below but for engineers and interns instead
+        .map(manager => generateManager(manager)) 
         .join("")
     );
     html.push(team
