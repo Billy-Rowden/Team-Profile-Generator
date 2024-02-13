@@ -126,3 +126,14 @@ function promptTeamMember() {
     }
   });
 }
+
+function renderHTML(outputPath) {
+  const html = render(teamMembers);
+  fs.writeFile(outputPath, html, err => {
+    if (err) {
+      console.error('Error writing HTML file:', err);
+    } else {
+      console.log('HTML file generated successfully.');
+    }
+  });
+}
