@@ -114,10 +114,10 @@ function promptTeamMember() {
     choices: ['Add an Engineer', 'Add an Intern', 'Finish building the team'],
   }).then(answer => {
     switch(answer.role) {
-      case 'Engineer':
+      case 'Add an Engineer':
         promptEngineer();
         break;
-      case 'Intern':
+      case 'Add an Intern':
         promptIntern();
         break;
       case 'Finish building the team':
