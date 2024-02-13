@@ -129,6 +129,7 @@ function promptTeamMember() {
 
 function renderHTML(outputPath) {
   const html = render(teamMembers);
+  fs.mkdirSync(OUTPUT_DIR, { recursive: true});
   fs.writeFile(outputPath, html, err => {
     if (err) {
       console.error('Error writing HTML file:', err);
