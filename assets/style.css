@@ -1,0 +1,19 @@
+.card {
+    margin: 10px !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.team-heading h1 {
+    color: white;
+}
+
+.jumbotron {
+    background-color: blue !important;
+    border-radius: 0rem !important;
+}
+
+.card-header {
+    background-color: purple !important;
+    color: white;
+}
+
