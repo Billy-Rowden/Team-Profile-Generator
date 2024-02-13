@@ -35,3 +35,49 @@ const managerQuestions = [
     message: "Enter team manager's office number:",
   },
 ];
+
+const engineerQuestions = [
+  {
+    type: 'input',
+    name: 'name',
+    message: "Enter engineer's name:",
+  },
+  {
+    type: 'input',
+    name: 'id',
+    message: "Enter engineer's ID:",
+  },
+  {
+    type: 'input',
+    name: 'email',
+    message: "Enter engineer's email:",
+  },
+  {
+    type: 'input',
+    name: 'github',
+    message: "Enter engineer's GitHub username:",
+  },
+];
+
+const internQuestions = [
+  {
+    type: 'input',
+    name: 'name',
+    message: "Enter intern's name:",
+  },
+  {
+    type: 'input',
+    name: 'id',
+    message: "Enter intern's ID:",
+  },
+  {
+    type: 'input',
+    name: 'email',
+    message: "Enter intern's email:",
+  },
+  {
+    type: 'input',
+    name: 'school',
+    message: "Enter intern's school:",
+  },
+];
