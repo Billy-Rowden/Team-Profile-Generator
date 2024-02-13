@@ -112,5 +112,17 @@ function promptTeamMember() {
     name: 'role',
     message: 'Would you like to add another team member, or finish building the team?',
     choices: ['Add an Engineer', 'Add an Intern', 'Finish building the team'],
+  }).then(answer => {
+    switch(answer.role) {
+      case 'Engineer':
+        promptEngineer();
+        break;
+      case 'Intern':
+        promptIntern();
+        break;
+      case 'Finish building the team':
+        renderHTML(outputPath);
+        break;
+    }
   });
 }
