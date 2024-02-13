@@ -90,6 +90,22 @@ function promptManager() {
   });
 }
 
+function promptEngineer() {
+  inquirer.prompt(engineerQuestions).then(answers => {
+    const engineer = new Engineer(answers.name, answers.id, answers.email, answers.github);
+    teamMembers.push(engineer);
+    promptTeamMember();
+  });
+}
+
+function promptIntern() {
+  inquirer.prompt(internQuestions).then(answers => {
+    const intern = new Intern(answers.name, answers.id, answers.email, answers.school);
+    teamMembers.push(intern);
+    promptTeamMember();
+  });
+}
+
 function promptTeamMember() {
-  
+
 }
