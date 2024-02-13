@@ -138,3 +138,5 @@ function renderHTML(outputPath) {
     }
   });
 }
+
+promptManager();
