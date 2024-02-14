@@ -2,6 +2,11 @@
 
 ![GitHub license](https://img.shields.io/badge/license-MIT-orange.svg)
 
+![badmath](https://img.shields.io/badge/Javascript-77.1%-blue)
+![badmath](https://img.shields.io/badge/HTML-21.1%-orange)
+![badmath](https://img.shields.io/badge/CSS-1.8%-purple)
+
+
 ## Description
 This allows a user to generate cards containing information about a team of employees and the application creates a simple HTML page to display this information.
 
